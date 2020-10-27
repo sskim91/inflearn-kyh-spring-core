@@ -12,7 +12,7 @@ public class OrderServiceImpl implements OrderService{
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
 
-    @Autowired
+    @Autowired  //생성자가 딱 하나 있으면 @Autowired를 생략해도 자동 주입 된다.
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         //OrderServiceImpl 입장에서는 할인 정책이 고정할인정책인지 정률할인 정책인지 모른다. 알 필요도 없음.
         this.memberRepository = memberRepository;
