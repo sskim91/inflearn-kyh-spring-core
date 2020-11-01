@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+//@RequiredArgsConstructor  //lombok final이 붙은 필드를 모아서 생성자를 만들어준다.
 public class OrderServiceImpl implements OrderService{
 
     private final MemberRepository memberRepository;
